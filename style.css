@@ -7,21 +7,38 @@
     body {
         font-family: 'Roboto', sans-serif;
         margin: 0px;
-        background-color: white;
+        background-color: rgb(231, 218, 199);
+        /* background-image: url(images/Colorful-Circle-Simple-Background-Image-1.jpg);*/
+        background-size: cover;
     }
     
     header {
-        background-color: white;
+        background-color: rgb(147, 112, 71);
         margin: 0px;
+        width: 100%;
+        height: 70px;
+        border: 5px solid black;
     }
     
-    nav {
-        list-style-type: none;
-        margin-left: 85%;
+    nav h2 {
+        display: inline-block;
+        margin-left: 10px;
+        font-family: 'Ephesis', cursive;
+        padding-top: 20px;
+        font-size: x-large;
     }
     
     nav li {
+        font-family: 'Ephesis', cursive;
+        float: right;
+        font-size: x-large;
         display: inline-block;
+        margin-left: 15px;
+        padding-top: 20px;
+    }
+    
+    a:visited {
+        color: black;
     }
     
     aside {
@@ -34,7 +51,14 @@
     }
     
     aside h2 {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Ephesis', cursive;
+    }
+    
+    aside img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        float: right;
     }
     
     main {
@@ -42,4 +66,20 @@
         width: 80%;
         height: 500px;
         padding: 108px;
+    }
+    
+    .projects {
+        text-align: center;
+        font-family: 'Ephesis', cursive;
+        margin-bottom: 50px;
+        text-decoration: underline;
+    }
+    
+    article {
+        margin-bottom: 20px;
+    }
+    
+    .project {
+        font-family: 'Ephesis', cursive;
+        text-decoration: underline;
     }
