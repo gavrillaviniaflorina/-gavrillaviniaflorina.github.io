@@ -12,15 +12,26 @@
         width: 100%;
     }
     
-    header h3 {
-        margin-top: 40px;
-        margin-bottom: 10px;
+    .line {
+        display: none;
     }
     
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+    }
+    
+    nav img {
+        width: 150px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    
+    nav h3 {
+        margin-top: 20px;
     }
     
     ul {
@@ -35,15 +46,11 @@
         margin-bottom: 10px;
     }
     
-    img {
-        width: 100px;
-    }
-    
     .about {
-        border-radius: 20px;
-        margin: auto;
         width: 80%;
+        margin: auto;
         margin-top: 100px;
+        border-radius: 20px;
         background-color: #9d9ad9;
         display: flex;
         flex-direction: column;
@@ -56,7 +63,6 @@
         margin-bottom: 20px;
         color: #cedef0;
         background-color: #9d9ad9;
-        border-radius: 10px;
     }
     
     .about img {
@@ -67,22 +73,21 @@
     }
     
     .about p {
-        padding: 20px;
+        text-align: center;
         height: 60%;
+        padding: 10px;
     }
     
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .project {
+    .projects {
         width: 80%;
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
     
-    .project h2 {
+    .projects h2 {
         margin-top: 30px;
         color: #9d9ad9;
         text-align: center;
@@ -92,6 +97,14 @@
         border-radius: 30px;
         background-color: #cedef0;
         text-align: left;
+    }
+    
+    .project {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
     }
     
     .project h3 {
@@ -103,38 +116,158 @@
         text-align: right;
         width: 70%;
         margin-top: 50px;
-        margin-left: 120px;
+        align-self: flex-end;
         margin-bottom: 50px;
-    }
-    
-    .project p {
-        margin: auto;
-        text-align: center;
     }
     
     .project img {
         width: 250px;
-        margin-left: 100px;
     }
     
     a {
-        margin-top: 100px;
-        margin: 100px;
+        margin-top: 50px;
     }
     
     .contact {
         width: 80%;
         margin: auto;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .contact h2 {
         margin-top: 30px;
+        width: 100%;
         color: #9d9ad9;
         text-align: center;
-        position: sticky;
-        top: 0px;
-        left: 0px;
         border-radius: 30px;
         background-color: #cedef0;
-        text-align: left;
+        margin-bottom: 50px;
+    }
+    
+    .contact p {
+        text-align: center;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+    
+    .contact img {
+        width: 250px;
+    }
+    
+    .cont {
+        font-weight: bolder;
+    }
+    
+    footer {
+        text-align: right;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    @media(min-width:720px) {
+        .line {
+            display: inherit;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav h3 {
+            align-self: center;
+            margin-top: 50px;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        li {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        nav img {
+            margin-top: 20px;
+            position: inherit;
+            display: inherit;
+            width: 300px;
+        }
+        .projects {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .projects h2 {
+            position: inherit;
+            width: 80%;
+            text-align: center;
+        }
+        .project {
+            width: 40%;
+        }
+        .project h3 {
+            align-self: center;
+            text-align: center;
+            width: 100%;
+        }
+        .contact {
+            width: 100%;
+        }
+        .contact section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .contact article {
+            align-self: center;
+            margin-left: 70px;
+        }
+        .contact h2 {
+            width: 80%;
+        }
+    }
+    
+    @media(min-width:1024px) {
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        nav h3 {
+            align-self: left;
+            margin-left: 30px;
+            margin-top: 50px;
+        }
+        ul {
+            align-self: center;
+            display: flex;
+            flex-direction: row;
+            align-items: right;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 70px;
+        }
+        .about {
+            width: 30%;
+            margin: inherit;
+            margin-top: 0px;
+        }
+        .projects h2 {
+            margin-top: 0px;
+        }
     }
